@@ -1,0 +1,213 @@
+/*
+Primary Colour: #09aa9a
+Secondary Colour: #ffd941
+Text: #424242 or #ffffff
+*/
+
+html, body {
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Roboto Mono', monospace;
+    overflow-x: hidden;
+}
+
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+     box-sizing: border-box; 
+}
+
+header {
+    height: 100%;
+    color: #424242;
+    display: block;
+}
+
+main {
+    display: block;
+}
+
+footer {
+    margin-bottom: 4%;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: #424242;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    padding: 3%;
+}
+
+h3 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #ffd941;
+}
+
+p {
+    font-size: 1.15rem;
+}
+
+li {
+    font-size: 1.15rem;
+    list-style: none;
+}
+
+ul {
+    padding-left: 0px;
+}
+
+dt {
+    font-size: 1.15rem;
+}
+
+dd {
+    font-size: 1.15rem;
+}
+
+/*PROJECT IMAGES-------------------------*/
+
+.image-list {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.list-img {
+    display: inline-block;
+    max-width: 24%;
+}
+
+.list-img-2 {
+    display: inline-block;
+    max-width: 32%;
+}
+
+.analog_image {
+    width: 100%;
+}
+
+.poly_image {
+    width: 100%;
+}
+
+/*PROFILE HEADER STUFF-------------------*/
+
+.profile_pic_container {
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    overflow: visible;
+}
+
+.profile_text_container {
+    display: block;
+    width: auto;
+    text-align: center;
+    padding: 3% 5% 5% 5%;
+}
+
+#profile_pic {
+    border-radius: 50%;
+    height: auto;
+    width: 50vw;
+    max-width: -webkit-calc(50vh - 90px);
+    max-width: -moz-calc(50vh - 90px);
+    max-width: calc(50vh - 90px);
+    box-shadow: 0px 0px 0px 15px #09aa9a, 
+                0px 0px 0px 30px #ffd941, 
+                0px 0px 0px 45px maroon;
+}
+
+.tagline {
+    font-size: 1.5rem;
+}
+
+/*SECTION BLOCKS-------------------------*/
+
+section {
+    padding: 0% 4% 0% 4%;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.projects {
+    text-align: left;
+    background-color: #09aa9a;
+}
+
+.skills {
+    color: #424242;
+    background-color: #ffd941;
+}
+
+.education {
+    background-color: #212121;
+}
+
+/*LIST STYLES----------------------------*/
+
+.list-container {
+    display: table;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.skill-col {
+    width: 33.33%;
+    display: table-cell;
+}
+
+.ed-col {
+    width: 49.9%;
+    display: table-cell;
+}
+
+/*RESPONSIVE-----------------------------*/
+
+@media only screen and (max-width: 768px) {
+    
+    .list-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .skill-col, .ed-col {
+        display: block;
+        width: 100%;
+    }
+    
+    /*Note: Eventually want to make images
+    display as a carousel. Find out how.*/
+    .list-img {
+        display: block;
+        width: 100%;
+        max-width: 50vw;
+        margin: 0 auto;
+    }
+    
+    .list-img-2 {
+        display: block;
+        width: 100%;
+        max-width: 50vw;
+        margin: 0 auto;
+    }
+}
