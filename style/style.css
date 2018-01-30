@@ -42,7 +42,7 @@ h1 {
 }
 
 h2 {
-    font-size: calc(100% + 1vw);
+    font-size: 2rem;
     text-align: center;
     margin: 0;
     padding: 3%;
@@ -182,7 +182,7 @@ section {
 
 /*RESPONSIVE-----------------------------*/
 
-@media only screen and (max-width: 768px) and (orientation: portrait){
+@media only screen and (orientation: portrait){
     
     .list-container {
         width: 100%;
