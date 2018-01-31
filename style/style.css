@@ -123,9 +123,10 @@ dd {
     margin: 0 auto;
     border-radius: 50%;
     width: 200px;
-    max-width: -webkit-calc(50vh - 90px);
+    height: 200px;
+    /*max-width: -webkit-calc(50vh - 90px);
     max-width: -moz-calc(50vh - 90px);
-    max-width: calc(50vh - 90px);
+    max-width: calc(50vh - 90px);*/
 }
 
 .tagline {
@@ -149,7 +150,7 @@ section {
 }
 
 .skills {
-    color: #424242;
+    color: #212121;
     background-color: #ffd941;
 }
 
