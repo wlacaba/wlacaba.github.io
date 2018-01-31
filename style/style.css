@@ -1,7 +1,5 @@
 /*
-Primary Colour: #09aa9a
-Secondary Colour: #ffd941
-Text: #424242 or #ffffff
+Main Colours: #212121, #09aa9a, #ffd941, #ffffff
 */
 
 html, body {
@@ -69,7 +67,7 @@ a {
     color: #ffd941;
 }
 
-p {
+p, dt, dd {
     font-size: 90%;
 }
 
@@ -80,14 +78,6 @@ li {
 
 ul {
     padding-left: 0px;
-}
-
-dt {
-    font-size: 90%;
-}
-
-dd {
-    font-size: 90%;
 }
 
 /*PROJECT IMAGES-------------------------*/
@@ -105,28 +95,21 @@ dd {
 
 .list-img-2 {
     display: inline-block;
-    max-width: 32%;
+    max-width: 31%;
 }
 
-.analog_image {
-    width: 100%;
-}
-
-.poly_image {
+.analog_image, .poly_image {
     width: 100%;
 }
 
 /*PROFILE HEADER STUFF-------------------*/
 
-#profile_pic {
+#profile-pic {
     display: block;
     margin: 0 auto;
     border-radius: 50%;
     width: 200px;
     height: 200px;
-    /*max-width: -webkit-calc(50vh - 90px);
-    max-width: -moz-calc(50vh - 90px);
-    max-width: calc(50vh - 90px);*/
 }
 
 .tagline {
