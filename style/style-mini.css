@@ -1,0 +1,37 @@
+html{-webkit-text-size-adjust:100%;}
+html, body{width:100%;height:100%;color:#ffffff;text-align:center;margin:0 auto;font-family:'Roboto Mono', monospace;-webkit-overflow-scrolling:touch;}
+*{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+header{color:#ffffff;display:block;text-align:center;padding:3% 4% 3% 4%;width:90%;margin:0 auto;margin-bottom:3%;margin-top:3%;border-radius:10px;background-color:#212121;}
+main{display:block;}
+footer{color:#ffffff;display:block;text-align:center;padding:3% 4% 3% 4%;width:90%;margin:0 auto;margin-bottom:3%;border-radius:10px;background-color:#212121;}
+h1{font-size:calc(100% + 3vw);}
+h2{font-size:calc(100% + 1.5vw);text-align:center;margin:0;padding:3%;}
+h3{text-align:center;}
+a{text-decoration:none;color:#ffd941;}
+p, dt, dd{font-size:90%;}
+li{font-size:90%;list-style:none;}
+ul{padding-left:0px;}
+.image-list{width:100%;margin:auto;text-align:center;position:relative;}
+.analog-image{display:inline-block;padding:none;max-width:23%;}
+.poly-image{display:inline-block;padding:none;max-width:31%;}
+.prev, .next{display:none;position:absolute;top:50%;transform:translateY(-50%);cursor:pointer;width:auto;font-weight:bold;font-size:22px;}
+.prev{left:0;padding:15px 15px 15px 0px;}
+.next{right:0;padding:15px 0px 15px 15px;}
+#profile-pic{display:block;margin:0 auto;border-radius:50%;width:200px;height:200px;}
+.tagline{font-size:100%;}
+section{padding:0% 4% 0% 4%;width:90%;margin:0 auto;margin-bottom:3%;border-radius:10px;text-align:center;}
+.projects{text-align:left;background-color:#09aa9a;}
+.skills{color:#212121;background-color:#ffd941;}
+.education{background-color:#09aa9a;}
+.list-container{display:table;width:100%;margin:0 auto;}
+.skill-col{width:33.33%;display:table-cell;}
+.ed-col{width:49.9%;display:table-cell;}
+@media only screen and (max-width:768px){.list-container{width:100%;margin:0 auto;}
+.skill-col, .ed-col{display:block;width:100%;}
+}
+@media only screen and (orientation:portrait){.list-container{width:100%;margin:0 auto;}
+.skill-col, .ed-col{display:block;width:100%;}
+.analog-image{display:none;width:100%;max-width:50vw;margin:0 auto;}
+.poly-image{display:block;width:100%;max-width:50vw;max-height:80vh;padding-top:2%;padding-bottom:2%;margin:0 auto;}
+.prev, .next{display:initial;}
+}

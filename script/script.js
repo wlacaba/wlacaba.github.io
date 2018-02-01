@@ -6,10 +6,6 @@ var mediaQuery = window.matchMedia("(orientation: portrait)");
 check(mediaQuery);
 mediaQuery.addListener(check);
 
-function traverseSlide(n, classNum) {
-    showSlide(indexes[classNum] += n, classNum);
-}
-
 function check(media) {
     if (media.matches) {
         showSlide(1, 0);
@@ -19,6 +15,10 @@ function check(media) {
         showNormal("analog-image");
         showNormal("poly-image");
     }
+}
+
+function traverseSlide(n, classNum) {
+    showSlide(indexes[classNum] += n, classNum);
 }
 
 function showSlide(n, classNum) {
