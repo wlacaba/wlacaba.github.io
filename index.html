@@ -4,6 +4,10 @@
         <meta charset="utf-8">
         <meta name="description" content="Warren Lacaba Portfolio Site">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="Warren Lacaba Portfolio">
+        <meta property="og:image" content="image/og-image.jpg">
+        <meta property="og:description" content="A portfolio of my experience and education.">
+        <meta property="og:url" content="https://wlacaba.github.io">
         <link href="../image/WL_icon.png"/ rel="icon">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
         <link href="style/style.css" rel="stylesheet">
@@ -33,14 +37,12 @@
                     </dl>
                     <p>Tools, Tech, and Languages: Java, XML, Git, Android Studio</p>
                     <div class="image-list">
-                        <a class="prev" onclick="traverseSlide(-1)">&#10094;</a>
-
+                        <a class="prev" onclick="traverseSlide(-1,0)">&#10094;</a>
                         <img class="analog-image" src="image/Phone%20Vector%20-%20Toolkit.png" alt="ANALOG Toolkit">
                         <img class="analog-image" src="image/Phone%20Vector%20-%20Depth%20of%20Field.png" alt="ANALOG DOF Calculator">
                         <img class="analog-image" src="image/Phone%20Vector%20-%20Light%20Meter.png" alt="ANALOG Light Meter">
                         <img class="analog-image" src="image/Phone%20Vector%20-%20Logbook.png" alt="ANALOG Logbook">
-
-                        <a class="next" onclick="traverseSlide(1)">&#10095;</a>
+                        <a class="next" onclick="traverseSlide(1,0)">&#10095;</a>
                     </div>
 
                 <h3>&ldquo;Movie Revenue Prediction&rdquo;</h3>
@@ -51,11 +53,11 @@
                     <p><strong>Polyhedron Drawing</strong> was a course project for COMP4420: Advanced Design and Analysis of Algorithms. The purpose was to read a text file that detailed the vertices and coordinates of a polyhedron, translate the coordinates to the screen, and use the painter's algorithm to display it. In addition to displaying, you can also interact with the polyhedron by rotating, zooming, and changing the colour. This project was developed in Java, using the JOGL Library.</p>
                     <p>Tools, Tech, and Languages: Java, JOGL</p>
                     <div class="image-list">
-                        <a class="prev" onclick="traverseSlide(-1)">&#10094;</a>
+                        <a class="prev" onclick="traverseSlide(-1,1)">&#10094;</a>
                         <img class="poly-image" src="image/Dodecahedron-Optimized.gif" alt="Dodecahedron Animation">
                         <img class="poly-image" src="image/Stellated-Dodecahedron-Optimized.gif" alt="Stellated Dodecahedron Animation">
                         <img class="poly-image" src="image/Golfball-Optimized.gif" alt="Golfball Animation">
-                        <a class="next" onclick="traverseSlide(1)">&#10095;</a>
+                        <a class="next" onclick="traverseSlide(1,1)">&#10095;</a>
                     </div>          
             <h2>&lt;/projects&gt;</h2>
         </section>
@@ -76,6 +78,7 @@
                     <ul>
                         <li>Python</li>
                         <li>SQL</li>
+                        <li>Git</li>
                         <li>Visual Studio Code</li>
                     </ul>
                 </div>
@@ -84,7 +87,7 @@
                     <ul>
                         <li>HTML</li>
                         <li>CSS</li>
-                        <li>Git</li>
+                        <li>Javascript</li>
                     </ul>
                 </div>
             </div>
