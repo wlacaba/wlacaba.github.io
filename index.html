@@ -32,12 +32,16 @@
                         <dd>The logbook lets you record information about each roll of film and photo you shoot. You can add and edit things such as: ISO, shutter speed, aperture, film name, photo title, and notes.</dd>
                     </dl>
                     <p>Tools, Tech, and Languages: Java, XML, Git, Android Studio</p>
-                    <ul class="image-list">
-                        <li class="list-img" ><img class="analog-image" src="image/Phone%20Vector%20-%20Toolkit.png" alt="ANALOG Toolkit"></li>
-                        <li class="list-img" ><img class="analog-image" src="image/Phone%20Vector%20-%20Depth%20of%20Field.png" alt="ANALOG DOF Calculator"></li>
-                        <li class="list-img" ><img class="analog-image" src="image/Phone%20Vector%20-%20Light%20Meter.png" alt="ANALOG Light Meter"></li>
-                        <li class="list-img" ><img class="analog-image" src="image/Phone%20Vector%20-%20Logbook.png" alt="ANALOG Logbook"></li>
-                    </ul>
+                    <div class="image-list">
+                        <a class="prev" onclick="traverseSlide(-1)">&#10094;</a>
+
+                        <img class="analog-image" src="image/Phone%20Vector%20-%20Toolkit.png" alt="ANALOG Toolkit">
+                        <img class="analog-image" src="image/Phone%20Vector%20-%20Depth%20of%20Field.png" alt="ANALOG DOF Calculator">
+                        <img class="analog-image" src="image/Phone%20Vector%20-%20Light%20Meter.png" alt="ANALOG Light Meter">
+                        <img class="analog-image" src="image/Phone%20Vector%20-%20Logbook.png" alt="ANALOG Logbook">
+
+                        <a class="next" onclick="traverseSlide(1)">&#10095;</a>
+                    </div>
 
                 <h3>&ldquo;Movie Revenue Prediction&rdquo;</h3>
                     <p><strong>Movie Revenue Prediction</strong> is a group project for COMP4710: Intro to Data Mining. The group and I attempted to use decision tree classification algorithms to predict the revenue bracket for a movie. We used the following as indicators for predicting the revenue: genre, release date, budget, and production company. I wrote the initial code to read in our database and clean up the data. In particular, my code did the following: correct money values for inflation, classify movies in brackets, parse genre and company from JSON format strings, and output a .csv file with only the relevant parameters.</p>
@@ -46,11 +50,13 @@
                 <h3>&ldquo;Polyhedron Drawing&rdquo;</h3>
                     <p><strong>Polyhedron Drawing</strong> was a course project for COMP4420: Advanced Design and Analysis of Algorithms. The purpose was to read a text file that detailed the vertices and coordinates of a polyhedron, translate the coordinates to the screen, and use the painter's algorithm to display it. In addition to displaying, you can also interact with the polyhedron by rotating, zooming, and changing the colour. This project was developed in Java, using the JOGL Library.</p>
                     <p>Tools, Tech, and Languages: Java, JOGL</p>
-                    <ul class="image-list">
-                        <li class="list-img-2"><img class="poly-image" src="image/Dodecahedron-Optimized.gif" alt="Dodecahedron Animation"></li>
-                        <li class="list-img-2"><img class="poly-image" src="image/Stellated-Dodecahedron-Optimized.gif" alt="Stellated Dodecahedron Animation"></li>
-                        <li class="list-img-2"><img class="poly-image" src="image/Golfball-Optimized.gif" alt="Golfball Animation"></li>
-                    </ul>          
+                    <div class="image-list">
+                        <a class="prev" onclick="traverseSlide(-1)">&#10094;</a>
+                        <img class="poly-image" src="image/Dodecahedron-Optimized.gif" alt="Dodecahedron Animation">
+                        <img class="poly-image" src="image/Stellated-Dodecahedron-Optimized.gif" alt="Stellated Dodecahedron Animation">
+                        <img class="poly-image" src="image/Golfball-Optimized.gif" alt="Golfball Animation">
+                        <a class="next" onclick="traverseSlide(1)">&#10095;</a>
+                    </div>          
             <h2>&lt;/projects&gt;</h2>
         </section>
 
@@ -69,6 +75,7 @@
                     <h3>Familiar</h3>
                     <ul>
                         <li>Python</li>
+                        <li>SQL</li>
                         <li>Visual Studio Code</li>
                     </ul>
                 </div>
@@ -117,4 +124,5 @@
             <p>&copy; Warren Lacaba 2017.</p>
         </footer>
     </body>
+    <script src="script/script.js"></script>
 </html>

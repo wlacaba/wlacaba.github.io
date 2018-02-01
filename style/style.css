@@ -1,6 +1,9 @@
 /*
 Main Colours: #212121, #09aa9a, #ffd941, #ffffff
 */
+html {
+    -webkit-text-size-adjust: 100%;
+}
 
 html, body {
     width: 100%;
@@ -86,20 +89,45 @@ ul {
     width: 100%;
     margin: auto;
     text-align: center;
+    position: relative;
 }
 
-.list-img {
+.analog-image {
     display: inline-block;
+    padding: none;
     max-width: 23%;
 }
 
-.list-img-2 {
+.poly-image {
     display: inline-block;
+    padding: none;
     max-width: 31%;
 }
 
-.analog-image, .poly-image {
-    width: 100%;
+.prev, .next {
+    /*
+    Note to self: "position: absolute" and "top: 50%" + "transform: translateY(-50%)"
+    works by placing itself at halfway vertical to a parent with absolute 
+    or relative position. If no such parent, it'll default to the html element.
+    This is why .image-list needs a relative position.*/
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: auto;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.prev {
+    left: 0;
+    padding: 15px 15px 15px 0px;
+}
+
+.next {
+    right: 0;
+    padding: 15px 0px 15px 15px;
 }
 
 /*PROFILE HEADER STUFF-------------------*/
@@ -161,6 +189,18 @@ section {
 
 /*RESPONSIVE-----------------------------*/
 
+@media only screen and (max-width: 768px){
+    .list-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .skill-col, .ed-col {
+        display: block;
+        width: 100%;
+    }
+}
+
 @media only screen and (orientation: portrait){
     
     .list-container {
@@ -175,23 +215,24 @@ section {
     
     /*Note: Eventually want to make images
     display as a carousel. Find out how.*/
-    .list-img {
-        display: block;
+    .analog-image {
+        /*display: none;*/
         width: 100%;
         max-width: 50vw;
         margin: 0 auto;
     }
     
-    .list-img-2 {
+    .poly-image {
         display: block;
         width: 100%;
         max-width: 50vw;
+        max-height: 80vh;
+        padding-top: 2%;
+        padding-bottom:  2%;
         margin: 0 auto;
     }
-}
 
-@media only screen and (orientation: landscape){
-    html {
-        -webkit-text-size-adjust: 100%;
+    .prev, .next {
+        display: initial;
     }
 }
