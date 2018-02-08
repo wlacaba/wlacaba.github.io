@@ -6,6 +6,23 @@ var mediaQuery = window.matchMedia("(orientation: portrait)");
 check(mediaQuery);
 mediaQuery.addListener(check);
 
+document.getElementById('analog-prev').onclick = function() {
+    traverseSlide(-1, 0);
+};
+
+document.getElementById('analog-next').onclick = function() {
+    traverseSlide(1, 0);
+}
+
+document.getElementById('poly-prev').onclick = function() {
+    traverseSlide(-1, 1);
+};
+
+document.getElementById('poly-next').onclick = function() {
+    traverseSlide(1, 1);
+}
+
+
 function check(media) {
     if (media.matches) {
         showSlide(1, 0);
