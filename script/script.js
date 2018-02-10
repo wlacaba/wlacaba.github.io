@@ -1,28 +1,3 @@
-var indexes = [1, 1];
-var classes = ["analog-image", "poly-image"];
-var mediaQuery = window.matchMedia("(orientation: portrait)");
-
-//Show slide version? Or show all images?
-check(mediaQuery);
-mediaQuery.addListener(check);
-
-document.getElementById('analog-prev').onclick = function() {
-    traverseSlide(-1, 0);
-};
-
-document.getElementById('analog-next').onclick = function() {
-    traverseSlide(1, 0);
-}
-
-document.getElementById('poly-prev').onclick = function() {
-    traverseSlide(-1, 1);
-};
-
-document.getElementById('poly-next').onclick = function() {
-    traverseSlide(1, 1);
-}
-
-
 function check(media) {
     if (media.matches) {
         showSlide(1, 0);
@@ -64,4 +39,28 @@ function showNormal(className) {
     for (i = 0; i < images.length; i++) {
         images[i].style.display = "inline-block";
     }
+}
+
+var indexes = [1, 1];
+var classes = ["analog-image", "poly-image"];
+var mediaQuery = window.matchMedia("(orientation: portrait)");
+
+//Show slide version? Or show all images?
+check(mediaQuery);
+mediaQuery.addListener(check);
+
+document.getElementById('analog-prev').onclick = function() {
+    traverseSlide(-1, 0);
+};
+
+document.getElementById('analog-next').onclick = function() {
+    traverseSlide(1, 0);
+}
+
+document.getElementById('poly-prev').onclick = function() {
+    traverseSlide(-1, 1);
+};
+
+document.getElementById('poly-next').onclick = function() {
+    traverseSlide(1, 1);
 }

@@ -18,7 +18,7 @@ ul{padding-left:0px;}
 .prev{left:0;padding:15px 15px 15px 0px;}
 .next{right:0;padding:15px 0px 15px 15px;}
 #profile-pic{display:block;margin:0 auto;border-radius:50%;width:200px;height:200px;}
-.tagline{font-size:100%;}
+.tagline{font-size:90%;}
 section{padding:0% 4% 0% 4%;width:90%;margin:0 auto;margin-bottom:3%;border-radius:10px;text-align:center;}
 .projects{text-align:left;background-color:#09aa9a;}
 .skills{color:#212121;background-color:#ffd941;}
