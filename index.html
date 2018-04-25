@@ -1,132 +1,132 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="Warren Lacaba Portfolio Site">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta property="og:title" content="Warren Lacaba Portfolio">
-        <meta property="og:image" content="image/og-image.jpg">
-        <meta property="og:description" content="A portfolio of my software development experience and education.">
-        <meta property="og:url" content="https://wlacaba.github.io">
-        <link href="../image/WL_icon.png"/ rel="icon">
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-        <link href="style/style-mini.css" rel="stylesheet">
-        <title>Warren Lacaba</title>
-    </head> 
-    <body>
-        <header>
-            <img id="profile-pic" src="image/Warren-Lacaba-Portrait.jpg" alt="Warren Lacaba Portrait">
-            <h1>Warren Lacaba</h1>
-            <p class="tagline">Hello World! I'm a Computer Science graduate from the University of Manitoba. I've got experience in Android app development and I'm also exploring cross platform mobile development with React Native. I love any chance I get to learn something new, and am actively seeking opportunities in the Winnipeg area!</p>
-        </header>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Warren Lacaba Portfolio Site">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Warren Lacaba Portfolio">
+    <meta property="og:image" content="image/og-image.jpg">
+    <meta property="og:description" content="A portfolio of my software development experience and education.">
+    <meta property="og:url" content="https://wlacaba.github.io">
+    <link href="../image/WL_icon.png"/ rel="icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link href="style/style-mini.css" rel="stylesheet">
+    <title>Warren Lacaba</title>
+  </head> 
+  <body>
+    <header>
+      <img id="profile-pic" src="image/Warren-Lacaba-Portrait.jpg" alt="Warren Lacaba Portrait">
+      <h1>Warren Lacaba</h1>
+        <p class="tagline">Hello World! I'm a Computer Science graduate from the University of Manitoba. I've got experience in Android app development and I'm also exploring cross platform mobile development with React Native. I love any chance I get to learn something new, and am actively seeking opportunities in the Winnipeg area!</p>
+    </header>
         
-        <main>
-        <section class="projects">
-            <h2>&lt;projects&gt;</h2>
-                <h3>&ldquo;ANALOG - The Film Photographer's Toolkit&rdquo;</h3>
-                    <p><strong>ANALOG</strong> is an Android app made for film photographers. It has three tools to help make the work of photography easier: a logbook, light meter, and depth of field calculator. This app was developed from the ground up completely by me, from the visual design to the actual implementation. You can find it <a href="https://play.google.com/store/apps/details?id=com.wlacaba.analog&hl=en" target ="_blank" title="ANALOG App">here</a> on Google Play.</p>
-                    <dl>
-                        <dt><b>Depth of Field Calculator</b></dt>
-                        <dd>The depth of field calculator tells you what portion of your photo is in focus, given certain settings. Your depth of field is determined by four things: aperture (size of the lens opening), the size of your film, the focal length of your lens, and the distance of your focus.</dd>
+    <main>
+      <section class="projects">
+        <h2>&lt;projects&gt;</h2>
+          <h3>&ldquo;Colour Palette&rdquo;</h3>
+            <p><strong>Colour Palette</strong> is a single page web application that I'm currently working on. Its purpose is to extract a colour palette from an uploaded image. The project was inspired by my passion for photography and movies. I've always been interested in a colour scheme's ability to display an emotion or to add more interest to a scene. The project is currently still in development, you can follow my progress on my <a href="https://github.com/wlacaba/colour-palette">Github</a>.</p>
+						<p><b>Tools, Tech, and Languages:</b> React, Git, Visual Studio Code</p>
+          <h3>&ldquo;ANALOG - The Film Photographer's Toolkit&rdquo;</h3>
+            <p><strong>ANALOG</strong> is an Android app made for film photographers. It has three tools to help make the work of photography easier: a logbook, light meter, and depth of field calculator. This app was developed from the ground up completely by me, from the visual design to the actual implementation. You can find it <a href="https://play.google.com/store/apps/details?id=com.wlacaba.analog&hl=en" target ="_blank" title="ANALOG App">here</a> on Google Play.</p>
+            <dl>
+              <dt><b>Depth of Field Calculator</b></dt>
+              <dd>The depth of field calculator tells you what portion of your photo is in focus, given certain settings. Your depth of field is determined by four things: aperture (size of the lens opening), the size of your film, the focal length of your lens, and the distance of your focus.</dd>
+              <dt><b>Light Meter</b></dt>
+              <dd>The light meter uses your phone’s front facing light sensor to take a measurement of the ambient light around you. It will use this measurement to calculate the proper camera settings for a good exposure that is neither too bright nor too dark. After taking a measurement, you can directly save the settings to an existing roll of film, or create a new one and save it to that!</dd>
+              <dt><b>Logbook</b></dt>
+              <dd>The logbook lets you record information about each roll of film and photo you shoot. You can add and edit things such as: ISO, shutter speed, aperture, film name, photo title, and notes.</dd>
+            </dl>
+						<p><b>Tools, Tech, and Languages:</b> Java, XML, SQLite, Git, Android Studio</p>
+						<div class="image-list">
+							<a class="prev" id="analog-prev">&#10094;</a>
+							<img class="analog-image" src="image/Phone%20Vector%20-%20Toolkit.png" alt="ANALOG Toolkit">
+							<img class="analog-image" src="image/Phone%20Vector%20-%20Depth%20of%20Field.png" alt="ANALOG DOF Calculator">
+							<img class="analog-image" src="image/Phone%20Vector%20-%20Light%20Meter.png" alt="ANALOG Light Meter">
+							<img class="analog-image" src="image/Phone%20Vector%20-%20Logbook.png" alt="ANALOG Logbook">
+							<a class="next" id="analog-next">&#10095;</a>
+						</div>
+          <h3>&ldquo;Movie Revenue Prediction&rdquo;</h3>
+            <p><strong>Movie Revenue Prediction</strong> is a group project for COMP4710: Intro to Data Mining. The group and I attempted to use decision tree classification algorithms to predict the revenue bracket for a movie. We used the following as indicators for predicting the revenue: genre, release date, budget, and production company. I wrote the initial code to read in our database and clean up the data. In particular, my code did the following: correct money values for inflation, classify movies in brackets, parse genre and company from JSON format strings, and output a .csv file with only the relevant parameters.</p>
+            <p>My other contribution was implementing the ID3 decision tree algorithm. The decision tree has a 54% accuracy for correctly classifying movies into revenue brackets. There are further modifications that can be made to the tree, outside the scope of our project, that could increase its accuracy. You can find the finished report <a href="https://drive.google.com/open?id=1Fe7qBX-Spa0mvTgfczcl7nWuw2TRzksY" target="_blank">here</a>.</p>
+						<p><b>Tools, Tech, and Languages:</b> Python, Git</p>
+        	<h3>&ldquo;Polyhedron Drawing&rdquo;</h3>
+						<p><strong>Polyhedron Drawing</strong> was a course project for COMP4420: Advanced Design and Analysis of Algorithms. The purpose was to read a text file that detailed the vertices and coordinates of a polyhedron, translate the coordinates to the screen, and use the painter's algorithm to display it. In addition to displaying, you can also interact with the polyhedron by rotating, zooming, and changing the colour. This project was developed in Java, using the JOGL Library.</p>
+						<p><b>Tools, Tech, and Languages:</b> Java, JOGL</p>
+						<div class="image-list">
+							<a class="prev" id="poly-prev">&#10094;</a>
+							<img class="poly-image" src="image/Dodecahedron-Optimized.gif" alt="Dodecahedron Animation">
+							<img class="poly-image" src="image/Stellated-Dodecahedron-Optimized.gif" alt="Stellated Dodecahedron Animation">
+							<img class="poly-image" src="image/Golfball-Optimized.gif" alt="Golfball Animation">
+							<a class="next" id="poly-next">&#10095;</a>
+						</div>          
+				<h2>&lt;/projects&gt;</h2>
+			</section>
 
-                        <dt><b>Light Meter</b></dt>
-                        <dd>The light meter uses your phone’s front facing light sensor to take a measurement of the ambient light around you. It will use this measurement to calculate the proper camera settings for a good exposure that is neither too bright nor too dark. After taking a measurement, you can directly save the settings to an existing roll of film, or create a new one and save it to that!</dd>
+			<section class="skills">
+				<h2>&lt;skills&gt;</h2>
+				<p>Here's a rundown of my technical skills so far. I'm always eager to learn something new, and I'm sure I can adapt to the job at hand.</p>
+				<div class="list-container">
+					<div class="skill-col">
+						<h3>Comfortable</h3>
+							<ul>
+								<li>Java</li>
+								<li>Android Studio</li>
+							</ul>
+					</div>
+					<div class="skill-col">
+						<h3>Familiar</h3>
+							<ul>
+								<li>Python</li>
+								<li>SQL</li>
+								<li>Git</li>
+								<li>Visual Studio Code</li>
+							</ul>
+					</div>
+					<div class="skill-col">
+						<h3>Beginner</h3> 
+							<ul>
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>Javascript</li>
+								<li>React Native</li>
+							</ul>
+					</div>
+				</div>
+				<h2>&lt;/skills&gt;</h2>
+			</section>
 
-                        <dt><b>Logbook</b></dt>
-                        <dd>The logbook lets you record information about each roll of film and photo you shoot. You can add and edit things such as: ISO, shutter speed, aperture, film name, photo title, and notes.</dd>
-                    </dl>
-                    <p><b>Tools, Tech, and Languages:</b> Java, XML, SQLite, Git, Android Studio</p>
-                    <div class="image-list">
-                        <a class="prev" id="analog-prev">&#10094;</a>
-                        <img class="analog-image" src="image/Phone%20Vector%20-%20Toolkit.png" alt="ANALOG Toolkit">
-                        <img class="analog-image" src="image/Phone%20Vector%20-%20Depth%20of%20Field.png" alt="ANALOG DOF Calculator">
-                        <img class="analog-image" src="image/Phone%20Vector%20-%20Light%20Meter.png" alt="ANALOG Light Meter">
-                        <img class="analog-image" src="image/Phone%20Vector%20-%20Logbook.png" alt="ANALOG Logbook">
-                        <a class="next" id="analog-next">&#10095;</a>
-                    </div>
-
-                <h3>&ldquo;Movie Revenue Prediction&rdquo;</h3>
-                    <p><strong>Movie Revenue Prediction</strong> is a group project for COMP4710: Intro to Data Mining. The group and I attempted to use decision tree classification algorithms to predict the revenue bracket for a movie. We used the following as indicators for predicting the revenue: genre, release date, budget, and production company. I wrote the initial code to read in our database and clean up the data. In particular, my code did the following: correct money values for inflation, classify movies in brackets, parse genre and company from JSON format strings, and output a .csv file with only the relevant parameters.</p>
-                    <p>My other contribution was implementing the ID3 decision tree algorithm. The decision tree has a 54% accuracy for correctly classifying movies into revenue brackets. There are further modifications that can be made to the tree, outside the scope of our project, that could increase its accuracy. You can find the finished report <a href="https://drive.google.com/open?id=1Fe7qBX-Spa0mvTgfczcl7nWuw2TRzksY" target="_blank">here</a>.</p>
-                    <p><b>Tools, Tech, and Languages:</b> Python, Git</p>
-                <h3>&ldquo;Polyhedron Drawing&rdquo;</h3>
-                    <p><strong>Polyhedron Drawing</strong> was a course project for COMP4420: Advanced Design and Analysis of Algorithms. The purpose was to read a text file that detailed the vertices and coordinates of a polyhedron, translate the coordinates to the screen, and use the painter's algorithm to display it. In addition to displaying, you can also interact with the polyhedron by rotating, zooming, and changing the colour. This project was developed in Java, using the JOGL Library.</p>
-                    <p><b>Tools, Tech, and Languages:</b> Java, JOGL</p>
-                    <div class="image-list">
-                        <a class="prev" id="poly-prev">&#10094;</a>
-                        <img class="poly-image" src="image/Dodecahedron-Optimized.gif" alt="Dodecahedron Animation">
-                        <img class="poly-image" src="image/Stellated-Dodecahedron-Optimized.gif" alt="Stellated Dodecahedron Animation">
-                        <img class="poly-image" src="image/Golfball-Optimized.gif" alt="Golfball Animation">
-                        <a class="next" id="poly-next">&#10095;</a>
-                    </div>          
-            <h2>&lt;/projects&gt;</h2>
-        </section>
-
-        <section class="skills">
-            <h2>&lt;skills&gt;</h2>
-            <p>Here's a rundown of my technical skills so far. I'm always eager to learn something new, and I'm sure I can adapt to the job at hand.</p>
-            <div class="list-container">
-                <div class="skill-col">
-                    <h3>Comfortable</h3>
-                    <ul>
-                        <li>Java</li>
-                        <li>Android Studio</li>
-                    </ul>
-                </div>
-                <div class="skill-col">
-                    <h3>Familiar</h3>
-                    <ul>
-                        <li>Python</li>
-                        <li>SQL</li>
-                        <li>Git</li>
-                        <li>Visual Studio Code</li>
-                    </ul>
-                </div>
-                <div class="skill-col">
-                    <h3>Beginner</h3> 
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Javascript</li>
-                        <li>React Native</li>
-                    </ul>
-                </div>
-            </div>
-            <h2>&lt;/skills&gt;</h2>
-        </section>
-
-        <section class="education">
-            <h2>&lt;education&gt;</h2>
-            <div class="list-container">
-                <div class="ed-col">
-                    <h3>University of Manitoba, Computer Science major</h3>
-                    <ul>
-                        <li>"Software Engineering"</li>
-                        <li>"Introduction to Data Mining"</li>
-                        <li>"Advanced Design and Analysis of Algorithms"</li>
-                        <li>"Technical Communication in Computer Science"</li>
-                        <li>"Database Concepts and Usage"</li>
-                    </ul>
-                </div>
-                <div class="ed-col">
-                    <h3>University of Manitoba, Psychology minor</h3>
-                    <ul>
-                        <li>"Intro to Psychology"</li>
-                        <li>"Sport Psychology"</li>
-                        <li>"Behaviour Modification Principles"</li>
-                        <li>"Social Psychology"</li>
-                        <li>"Psychology of Gender"</li>
-                    </ul>
-                </div>
-            </div>
-            <h2>&lt;/education&gt;</h2>
-        </section>
-        </main>
+			<section class="education">
+				<h2>&lt;education&gt;</h2>
+				<div class="list-container">
+					<div class="ed-col">
+						<h3>University of Manitoba, Computer Science major</h3>
+							<ul>
+								<li>"Software Engineering"</li>
+								<li>"Introduction to Data Mining"</li>
+								<li>"Advanced Design and Analysis of Algorithms"</li>
+								<li>"Technical Communication in Computer Science"</li>
+								<li>"Database Concepts and Usage"</li>
+							</ul>
+					</div>
+					<div class="ed-col">
+						<h3>University of Manitoba, Psychology minor</h3>
+							<ul>
+									<li>"Intro to Psychology"</li>
+									<li>"Sport Psychology"</li>
+									<li>"Behaviour Modification Principles"</li>
+									<li>"Social Psychology"</li>
+									<li>"Psychology of Gender"</li>
+							</ul>
+					</div>
+				</div>
+				<h2>&lt;/education&gt;</h2>
+			</section>
+    </main>
         
-        <footer>
-            <p>I'd love to get in touch! You can find me on <a href="https://www.linkedin.com/in/warrenlacaba/" target="_blank" title="Warren Lacaba on LinkedIn">LinkedIn</a>, see some of my code on <a href="https://www.github.com/wlacaba" target="_blank" title="Warren Lacaba on Github">Github</a>, or email me at <a href="mailto:lacaba.w@gmail.com" title="Warren Lacaba Email">lacaba.w@gmail.com</a>.</p>
-            <p>&copy; Warren Lacaba 2017.</p>
-        </footer>
-    </body>
-    <script src="script/script.js"></script>
+		<footer>
+			<p>I'd love to get in touch! You can find me on <a href="https://www.linkedin.com/in/warrenlacaba/" target="_blank" title="Warren Lacaba on LinkedIn">LinkedIn</a>, see some of my code on <a href="https://www.github.com/wlacaba" target="_blank" title="Warren Lacaba on Github">Github</a>, or email me at <a href="mailto:lacaba.w@gmail.com" title="Warren Lacaba Email">lacaba.w@gmail.com</a>.</p>
+			<p>&copy; Warren Lacaba 2017.</p>
+		</footer>
+  </body>
+  <script src="script/script.js"></script>
 </html>
