@@ -1,132 +1,162 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Warren Lacaba Portfolio Site">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Warren Lacaba Portfolio">
-    <meta property="og:image" content="image/og-image.jpg">
-    <meta property="og:description" content="A portfolio of my software development experience and education.">
-    <meta property="og:url" content="https://wlacaba.github.io">
-    <link href="../image/WL_icon.png"/ rel="icon">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-    <link href="style/style-mini.css" rel="stylesheet">
-    <title>Warren Lacaba</title>
-  </head> 
-  <body>
-    <header>
-      <img id="profile-pic" src="image/Warren-Lacaba-Portrait.jpg" alt="Warren Lacaba Portrait">
-      <h1>Warren Lacaba</h1>
-        <p class="tagline">Hello World! I'm a Computer Science graduate from the University of Manitoba who enjoys exploring different technologies. In the past, I've done some Android app development and currently, I'm working on a web app using React.js. Outside of software development, I'm an enthusiast photographer and professional coffee drinker.</p>
-    </header>
-        
-    <main>
-      <section class="projects">
-        <h2>&lt;projects&gt;</h2>
-          <h3>&ldquo;Colour Palette&rdquo;</h3>
-            <p><strong>Colour Palette</strong> is a single page web application that I'm currently working on. Its purpose is to extract a colour palette from an uploaded image. The project was inspired by my passion for photography and movies. I've always been interested in a colour scheme's ability to display an emotion or to add more interest to a scene. The project is currently a work in progress, you can see it <a href="https://wlacaba.github.io/colour-palette/" target="_blank">here</a> and see my code on my <a href="https://github.com/wlacaba/colour-palette" target="_blank">Github</a>.</p>
-						<p><b>Tools, Tech, and Languages:</b> React.js, Git, Visual Studio Code</p>
-          <h3>&ldquo;ANALOG - The Film Photographer's Toolkit&rdquo;</h3>
-            <p><strong>ANALOG</strong> is an Android app made for film photographers. It has three tools to help make the work of photography easier: a logbook, light meter, and depth of field calculator. This app was developed from the ground up completely by me, from the visual design to the actual implementation. You can find it <a href="https://play.google.com/store/apps/details?id=com.wlacaba.analog&hl=en" target ="_blank" title="ANALOG App">here</a> on Google Play.</p>
-            <dl>
-              <dt><b>Depth of Field Calculator</b></dt>
-              <dd>The depth of field calculator tells you what portion of your photo is in focus, given certain settings. Your depth of field is determined by four things: aperture (size of the lens opening), the size of your film, the focal length of your lens, and the distance of your focus.</dd>
-              <dt><b>Light Meter</b></dt>
-              <dd>The light meter uses your phone’s front facing light sensor to take a measurement of the ambient light around you. It will use this measurement to calculate the proper camera settings for a good exposure that is neither too bright nor too dark. After taking a measurement, you can directly save the settings to an existing roll of film, or create a new one and save it to that!</dd>
-              <dt><b>Logbook</b></dt>
-              <dd>The logbook lets you record information about each roll of film and photo you shoot. You can add and edit things such as: ISO, shutter speed, aperture, film name, photo title, and notes.</dd>
-            </dl>
-						<p><b>Tools, Tech, and Languages:</b> Java, XML, SQLite, Git, Android Studio</p>
-						<div class="image-list">
-							<a class="prev" id="analog-prev">&#10094;</a>
-							<img class="analog-image" src="image/Phone%20Vector%20-%20Toolkit.png" alt="ANALOG Toolkit">
-							<img class="analog-image" src="image/Phone%20Vector%20-%20Depth%20of%20Field.png" alt="ANALOG DOF Calculator">
-							<img class="analog-image" src="image/Phone%20Vector%20-%20Light%20Meter.png" alt="ANALOG Light Meter">
-							<img class="analog-image" src="image/Phone%20Vector%20-%20Logbook.png" alt="ANALOG Logbook">
-							<a class="next" id="analog-next">&#10095;</a>
-						</div>
-          <h3>&ldquo;Movie Revenue Prediction&rdquo;</h3>
-            <p><strong>Movie Revenue Prediction</strong> is a group project for COMP4710: Intro to Data Mining. The group and I attempted to use decision tree classification algorithms to predict the revenue bracket for a movie. We used the following as indicators for predicting the revenue: genre, release date, budget, and production company. I wrote the initial code to read in our database and clean up the data. In particular, my code did the following: correct money values for inflation, classify movies in brackets, parse genre and company from JSON format strings, and output a .csv file with only the relevant parameters.</p>
-            <p>My other contribution was implementing the ID3 decision tree algorithm. The decision tree has a 54% accuracy for correctly classifying movies into revenue brackets. There are further modifications that can be made to the tree, outside the scope of our project, that could increase its accuracy. You can find the finished report <a href="https://drive.google.com/open?id=1Fe7qBX-Spa0mvTgfczcl7nWuw2TRzksY" target="_blank">here</a>.</p>
-						<p><b>Tools, Tech, and Languages:</b> Python, Git</p>
-        	<h3>&ldquo;Polyhedron Drawing&rdquo;</h3>
-						<p><strong>Polyhedron Drawing</strong> was a course project for COMP4420: Advanced Design and Analysis of Algorithms. The purpose was to read a text file that detailed the vertices and coordinates of a polyhedron, translate the coordinates to the screen, and use the painter's algorithm to display it. In addition to displaying, you can also interact with the polyhedron by rotating, zooming, and changing the colour. This project was developed in Java, using the JOGL Library.</p>
-						<p><b>Tools, Tech, and Languages:</b> Java, JOGL</p>
-						<div class="image-list">
-							<a class="prev" id="poly-prev">&#10094;</a>
-							<img class="poly-image" src="image/Dodecahedron-Optimized.gif" alt="Dodecahedron Animation">
-							<img class="poly-image" src="image/Stellated-Dodecahedron-Optimized.gif" alt="Stellated Dodecahedron Animation">
-							<img class="poly-image" src="image/Golfball-Optimized.gif" alt="Golfball Animation">
-							<a class="next" id="poly-next">&#10095;</a>
-						</div>          
-				<h2>&lt;/projects&gt;</h2>
-			</section>
 
-			<section class="skills">
-				<h2>&lt;skills&gt;</h2>
-				<p>Here's a rundown of my technical skills so far. I'm always eager to learn something new, and I'm sure I can adapt to the job at hand.</p>
-				<div class="list-container">
-					<div class="skill-col">
-						<h3>Comfortable</h3>
-							<ul>
-								<li>Java</li>
-								<li>Android Studio</li>
-							</ul>
-					</div>
-					<div class="skill-col">
-						<h3>Familiar</h3>
-							<ul>
-								<li>Python</li>
-								<li>SQL</li>
-								<li>Git</li>
-								<li>Visual Studio Code</li>
-							</ul>
-					</div>
-					<div class="skill-col">
-						<h3>Beginner</h3> 
-							<ul>
-								<li>HTML</li>
-								<li>CSS</li>
-								<li>Javascript</li>
-								<li>React.js</li>
-							</ul>
-					</div>
-				</div>
-				<h2>&lt;/skills&gt;</h2>
-			</section>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Warren Lacaba Portfolio Site">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:title" content="Warren Lacaba Portfolio">
+	<meta property="og:image" content="image/og-image.jpg">
+	<meta property="og:description" content="A portfolio of my software development experience and education.">
+	<meta property="og:url" content="https://wlacaba.github.io">
+	<link href="../image/WL_icon.png" / rel="icon">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+	<link href="style/style.css" rel="stylesheet">
+	<title>Warren Lacaba</title>
+</head>
 
-			<section class="education">
-				<h2>&lt;education&gt;</h2>
-				<div class="list-container">
-					<div class="ed-col">
-						<h3>University of Manitoba, Computer Science major</h3>
-							<ul>
-								<li>"Software Engineering"</li>
-								<li>"Introduction to Data Mining"</li>
-								<li>"Advanced Design and Analysis of Algorithms"</li>
-								<li>"Technical Communication in Computer Science"</li>
-								<li>"Database Concepts and Usage"</li>
-							</ul>
-					</div>
-					<div class="ed-col">
-						<h3>University of Manitoba, Psychology minor</h3>
-							<ul>
-									<li>"Intro to Psychology"</li>
-									<li>"Sport Psychology"</li>
-									<li>"Behaviour Modification Principles"</li>
-									<li>"Social Psychology"</li>
-									<li>"Psychology of Gender"</li>
-							</ul>
-					</div>
+<body>
+	<header>
+		<img id="profile-pic" src="image/Warren-Lacaba-Portrait.jpg" alt="Warren Lacaba Portrait">
+		<h1>Warren Lacaba</h1>
+		<p class="tagline">BI Software Developer, coffee enthusiast, amateur photographer, less than amateur gamer.</p>
+	</header>
+
+	<main>
+		<section class="projects">
+			<h2>&lt;work experience&gt;</h2>
+			<h3>
+				BI Software Developer
+				<br>Farmers Edge
+				<br>June 2018 - Present
+			</h3>
+			<p>My job as a BI Software Developer with Farmers Edge is to make others' jobs easier. My main day to day
+				tasks include writing Python scripts or creating Azure Data Factory pipelines to extract data, and then making and
+				mainting Power BI reports using that data. Outside of my usual work, I'm also trusted to test out new tools and tech to see if
+				they would help out team work better. Some examples of my work include:
+			</p>
+			<dl>
+				<dt><b>Weather Forecast Emails</b></dt>
+				<dd>The purpose of this project was to take weather forecast data from the FarmCommand API and email
+					that to customers. I did this by
+					setting up a pipeline using Google Cloud Functions, Cloud Scheduler, and Pub/Sub. The first Cloud
+					Function pulls in customer data, which includes contact info, a weather station ID to query, and
+					preferred unit of measurement. This Function pushes each entry of customer data to a Pub/Sub topic.
+					A second Cloud Function is triggered by the Pub/Sub topic. It queries the FarmCommand API to pull
+					in weather forecast data, inserts that data into an HTML template, and then sends that out as an
+					email through the SendGrid API. This pipeline sends 1000+ emails to customers daily.
+				</dd>
+			</dl>
+			<dl>
+				<dt><b>Completeness Scripts</b></dt>
+				<dd>This project is for a multi-team effort to show how much of our data is properly filled in. I made a
+					Cloud Function to match data from Microsoft CRM to data from the FarmCommand API and show how much
+					is blank and whether there are discrepancies in the parts that are actually filled in. This function can be made to show different levels of granularity.
+					I also made a Function to parse through Excel files stored on Sharepoint and calculate the percentages of data completeness
+					for each given dimension.
+				</dd>
+			</dl>
+			<dl>
+				<dt><b>Rep Commissions Report</b></dt>
+				<dd>This report is used to help calculate commission payouts we owe to our representatives. I'm
+					primarily using Azure Data Factory to extract and transform data, but I've also made one Google
+					Cloud Function to clean up an Excel file before reading it into the rest of the pipeline. There are
+					many rules and exceptions to the calculations
+					so I've had to remain very organized to keep track of all the changes made.
+				</dd>
+			</dl>
+			<dl>
+				<dt><b>Monthly Acre Calculation Report</b></dt>
+				<dd>This report extracts data and shows contracts with the services associated with them, as well as the
+					number of acres the customer has. I originally made the data
+					extraction using Power BI Dataflows but have since then switched over to using Azure Data Factory.
+					The report itself is built with Power BI. This report is quite important
+					because it serves as a source of truth for further financial reports.
+				</dd>
+			</dl>
+			<dl>
+				<dt><b>Improving Data Extractions</b></dt>
+				<dd>- I helped test Azure Data Factory as one of our main tools for data extractions. Many of the
+					pipelines in this service used to be Power BI Dataflows, but our team found those slow and hard to
+					document. Moving over to Azure Data Factory improved our work because it ran quicker, was able to be
+					version controlled, and was more self-documenting due to the visual nature of the tool.
+				</dd>
+				<dd>- Some parts of our CRM data weren't retrievable through the connection to Azure Data Factory, so I
+					learned to use some of our existing Python code in Azure Functions. This allowed us to run Python
+					code as a step in our Azure Data Factory pipelines.
+				</dd>
+				<dd>- Since Farmers Edge has recently been moving to Google Cloud Platform, I've been learning about
+					services like Google Cloud Functions and Pub/Sub and teaching them to the rest of the team. I've
+					also been learning to extract data from BigQuery.
+				</dd>
+			</dl>
+			<h2>&lt;/work experience&gt;</h2>
+		</section>
+
+		<section class="skills">
+			<h2>&lt;skills&gt;</h2>
+			<p>Here's a rundown of my technical skills so far. I'm always eager to learn something new, and I'm sure I
+				can adapt to the job at hand.</p>
+			<div class="list-container">
+				<div class="skill-col">
+					<h3>Comfortable</h3>
+					<ul>
+						<li>Python</li>
+						<li>SQL</li>
+						<li>Git</li>
+						<li>Power BI</li>
+						<li>Azure Data Factory</li>
+					</ul>
 				</div>
-				<h2>&lt;/education&gt;</h2>
-			</section>
-    </main>
-        
-		<footer>
-			<p>I'd love to get in touch! You can find me on <a href="https://www.linkedin.com/in/warrenlacaba/" target="_blank" title="Warren Lacaba on LinkedIn">LinkedIn</a>, see some of my code on <a href="https://www.github.com/wlacaba" target="_blank" title="Warren Lacaba on Github">Github</a>, or email me at <a href="mailto:lacaba.w@gmail.com" title="Warren Lacaba Email">lacaba.w@gmail.com</a>.</p>
-			<p>&copy; Warren Lacaba 2017.</p>
-		</footer>
-  </body>
-  <script src="script/script.js"></script>
+				<div class="skill-col">
+					<h3>Familiar</h3>
+					<ul>
+						<li>Azure Functions</li>
+						<li>Google Cloud Functions</li>
+						<li>Google Pub/Sub</li>
+						<li>Visual Studio Code</li>
+						<li>JIRA</li>
+						<li>Confluence</li>
+						<li>Slack</li>
+					</ul>
+				</div>
+				<div class="skill-col">
+					<h3>Beginner</h3>
+					<ul>
+						<li>Google BigQuery</li>
+						<li>Excel</li>
+					</ul>
+				</div>
+			</div>
+			<h2>&lt;/skills&gt;</h2>
+		</section>
+
+		<section class="education">
+			<h2>&lt;education&gt;</h2>
+			<div class="list-container">
+				<h3>Bachelor of Science, University of Manitoba</h3>
+				<ul>
+					<li>2012 - 2018</li>
+					<li>Computer Science Major</li>
+				</ul>
+			</div>
+			<h2>&lt;/education&gt;</h2>
+		</section>
+
+		<section class="contact">
+			<h2>&lt;contact&gt;</h2>
+			<p>I'd love to get in touch! You can find me on <a href="https://www.linkedin.com/in/warrenlacaba/"
+					target="_blank" title="Warren Lacaba on LinkedIn">LinkedIn</a>, see some of my code on <a
+					href="https://www.github.com/wlacaba" target="_blank" title="Warren Lacaba on Github">Github</a>, or
+				email me at <a href="mailto:lacaba.w@gmail.com" title="Warren Lacaba Email">lacaba.w@gmail.com</a>.</p>
+			<h2>&lt;/contact&gt;</h2>
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; Warren Lacaba 2021.</p>
+	</footer>
+</body>
+<script src="script/script.js"></script>
+
 </html>
