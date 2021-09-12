@@ -39,15 +39,8 @@ main {
 }
 
 footer {
-	color: #ffffff;
-	display: block;
-	text-align: center;
-	padding: 3% 4% 3% 4%;
-	width: 90%;
-	margin: 0 auto;
-	margin-bottom: 3%;
-	border-radius: 10px;
-	background-color: #212121;
+	color: #212121;
+	padding-bottom: 1%;
 }
 
 h1 {
@@ -155,7 +148,7 @@ section {
 	text-align: center;
 }
 
-.projects {
+.experience {
 	text-align: left;
 	background-color: #09aa9a;
 }
@@ -167,6 +160,10 @@ section {
 
 .education {
 	background-color: #09aa9a;
+}
+
+.contact {
+	background-color: #212121;
 }
 
 /*LIST STYLES----------------------------*/
